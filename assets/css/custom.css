@@ -4,7 +4,6 @@ body {
 
 .menu-border {
   border:solid thin #e43f5a;
-  background: #e43f5a;
   border-radius: 5px;
   width:30px;
   height:30px;
@@ -23,4 +22,39 @@ body {
 
 .menu-padding {
   padding:0px 40px;
+}
+
+/* Color Background */
+.pink-bg {
+  background: #e43f5a;
+}
+
+.black-bg {
+  background: #1b1b2f;
+}
+
+.blue-light-bg {
+  background: #1f4068;
+}
+
+.blue-dark-bg {
+  background: #162447;
+}
+
+/* Color Text */
+
+.pink-text {
+  color: #e43f5a;
+}
+
+.black-text {
+  background: #1b1b2f;
+}
+
+.blue-light-text {
+  background: #1f4068;
+}
+
+.blue-dark-text {
+  background: #162447;
 }
