@@ -21,7 +21,6 @@ body {
 }
 
 .menu-border {
-  /* border:solid thin #f11f41; */
   border-radius: 5px;
   width:30px;
   height:30px;

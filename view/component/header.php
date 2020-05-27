@@ -24,6 +24,13 @@
       bottom:0px;
       z-index:99;
     }
+    .bubble {
+      margin-left: 3px;
+      text-align:center;
+      padding: 0px 5px;
+      border-radius:3px;
+      font-size:10px;
+    }
     .p-side-20 {
       padding: 0px 20px;
     }
