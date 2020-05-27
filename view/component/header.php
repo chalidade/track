@@ -24,8 +24,24 @@
       bottom:0px;
       z-index:99;
     }
+    .p-side-20 {
+      padding: 0px 20px;
+    }
     .menu-border:hover {
       box-shadow: 0px 0px 12px #e43f5a;
+    }
+    .main-background {
+      background:#d4d4d421;
+      margin-top:-17px;
+      padding: 10px 10px;
+      min-height:600px;
+    }
+
+    .device-list {
+      border:solid thin #d4d4d4;
+      margin:5px;
+      border-radius:5px;
+      box-shadow: 0px 0px 4px #16244721;
     }
     </style>
   </head>

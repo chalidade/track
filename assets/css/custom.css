@@ -2,6 +2,24 @@ body {
   font-size: 12px;
 }
 
+.sub-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.main-background {
+  background:#d4d4d421;
+  margin-top:-17px;
+  padding: 10px 10px;
+  min-height:600px;
+}
+
+.user-form {
+  border:none;
+  text-align:center;
+  margin-top:10px;
+}
+
 .menu-border {
   /* border:solid thin #f11f41; */
   border-radius: 5px;
@@ -17,6 +35,10 @@ body {
   width:50px;
   height:50px;
   margin:auto;
+}
+
+.test:hover {
+  background: #fff;
 }
 
 
@@ -47,6 +69,10 @@ body {
   background: #162447;
 }
 
+.tosca-bg {
+  background: #1b6ca8;
+}
+
 /* Color Text */
 
 .pink-text {
@@ -54,13 +80,17 @@ body {
 }
 
 .black-text {
-  background: #1b1b2f;
+  color: #1b1b2f;
 }
 
 .blue-light-text {
-  background: #1f4068;
+  color: #1f4068;
 }
 
 .blue-dark-text {
-  background: #162447;
+  color: #162447;
+}
+
+.tosca-text {
+  color: #1b6ca8;
 }
