@@ -1,1 +1,1 @@
-<?php include "view/option/nav_2.php"; ?>
+<?php include "view/option/nav_1.php"; ?>

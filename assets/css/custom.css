@@ -3,7 +3,7 @@ body {
 }
 
 .menu-border {
-  border:solid thin #e43f5a;
+  /* border:solid thin #f11f41; */
   border-radius: 5px;
   width:30px;
   height:30px;
@@ -22,6 +22,12 @@ body {
 
 .menu-padding {
   padding:0px 40px;
+}
+
+.map-full {
+  width: 100%;
+  height: 650px;
+  margin-top:-20px;
 }
 
 /* Color Background */
