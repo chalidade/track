@@ -25,7 +25,7 @@
       z-index:99;
     }
     .bubble {
-      margin-left: 3px;
+      margin-left: 10p
       text-align:center;
       padding: 0px 5px;
       border-radius:3px;
