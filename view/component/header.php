@@ -24,6 +24,34 @@
       bottom:0px;
       z-index:99;
     }
+    .text-form {
+      text-align:center;
+      border:none;
+    }
+    td {
+      vertical-align:top;
+    }
+    th {
+      vertical-align:top;
+    }
+    .text-ciri {
+      padding:5px;
+      text-align:center;
+      width:100%;
+      height:80px;
+      margin-top:-10px;
+      border:solid thin #d4d4d4;
+    }
+    .img-camera {
+      width:15px;
+      margin-left:5px;
+      margin-bottom:7px;
+    }
+    .img-upload {
+      width:80px;
+      height:80px;
+      border:solid thin #d4d4d4;
+    }
     .bubble {
       margin-left: 10p
       text-align:center;

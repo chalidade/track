@@ -55,16 +55,77 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" class="sub-title" style="font-size:14px;font-weight:600">Honda Brio</h5>
+          <h5 class="modal-title" class="sub-title" style="font-size:14px;font-weight:600">Detail Vehicle</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <div style="margin-bottom:20px">
+            <form class="" action="index.html" method="post" style="width:100%">
+              <div class="row">
+                  <div class="col-12">
+                    <table width="100%" cellpadding="5" cellspacing="10">
+                      <tr>
+                        <th>Mobil / Motor</th>
+                        <td>:</td>
+                        <td><input type="text" placeholder="Honda Brio" value="Honda Brio" style="border:none"></td>
+                      </tr>
+                      <tr>
+                        <th>Plat Nomor</th>
+                        <td>:</td>
+                        <td><input type="text" value="B 4432 XYZ"  placeholder="B 1245 MM" style="border:none"></td>
+                      </tr>
+                      <tr>
+                        <th>Nomor Alat</th>
+                        <td>:</td>
+                        <td><input type="text" value="AB001"  placeholder="Device Number" style="border:none"></td>
+                      </tr>
+                      <tr>
+                        <th>Nomor Telpon</th>
+                        <td>:</td>
+                        <td><input type="text" value="085156580308"  placeholder="Phone Number" style="border:none"></td>
+                      </tr>
+                      <tr>
+                        <th> Ciri Kendaraan</th>
+                        <td>:</td>
+                        <td>
+                          <textarea placeholder="Ciri Kendaraan ..." style="width:100%;height:auto;border:none">Warna merah, ada sedikit tergores dibagian lampu
+                          </textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Foto</th>
+                        <td>:</td>
+                        <td>
+                          <img src="assets/img/brio.jpg" style="width:150px" class="img-camera" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Lokasi Terakhir </th>
+                        <td colspan="2">:</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <div id='map' style="width:100%;height:250px"></div>
+                          <a href="https://www.google.com/maps/place/-7.257113+112.752165" class="btn blue-light-bg text-light" style="width:100%;font-size:12px">Buka Google Map</a>
+                          <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+                          <?php
+                            $id    = 1;
+                            echo '<script type="text/javascript"> var track = "false"; var id = '.$id.'; </script>';
+                            echo '<script type="text/javascript" src="assets/js/map-all.js"></script>';
+                          ?>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn pink-bg text-light" style="font-size:12px">Save</button>
+          <a href="?page=map&track=true&id=<?php echo $id; ?>" class="btn blue-light-bg text-light" style="font-size:12px">Lacak Kendaraan</a>
+          <button type="button" class="btn btn-danger text-light" style="font-size:12px">Berhentikan</button>
         </div>
       </div>
     </div>
@@ -74,13 +135,32 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" class="sub-title" style="font-size:14px;font-weight:600">Add New Device</h5>
+          <h5 class="modal-title" class="sub-title text-center" style="font-size:14px;font-weight:600">Add New Device</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="container" style="margin-bottom:20px">
+            <form class="" action="index.html" method="post" style="width:100%">
+              <div class="row">
+                  <div class="col-12 text-center">
+                    <center>
+                      <div class="img-upload">
+                        <img src="assets/img/camera.png" style="float:right;margin-right:5px;margin-top:5px;" class="img-camera" alt="">
+                      </div>
+                    </center>
+                    <br>
+                    <input type="text" class="sub-title text-form" placeholder="Honda Brio">
+                    <input type="text" placeholder="B 1245 MM" class="text-form"><br>
+                    <input type="text" placeholder="Device Number" class="text-form">
+                    <input type="text" placeholder="Phone Number" class="text-form"><br><br>
+                    <textarea class="text-ciri" placeholder="Ciri Kendaraan ..."></textarea>
+                    <br>
+                  </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn pink-bg text-light" style="font-size:12px">Save</button>

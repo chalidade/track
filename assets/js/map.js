@@ -4,7 +4,7 @@ var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v11',
   center: [112.752165, -7.257113],
-  zoom: 3
+  zoom: 10
 });
 
 var url = 'http://localhost/uapi/map';
