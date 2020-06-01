@@ -1,10 +1,7 @@
 <?php
   include "app/config/connection.php";
-    if (isset($_REQUEST["page"])) {
-      $page = $_REQUEST["page"];
-    } else {
-      $page = "index";
-    }
+  include "app/config/setting.php";
+  include "app/config/endpoint.php";
  ?>
 <!DOCTYPE html>
   <head>
@@ -12,8 +9,9 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/mapbox-gl.css"  />
+    <link rel="stylesheet" href="assets/css/custom.css">
     <script src="assets/js/mapbox-gl.js"></script>
     <style media="screen" type="text/css">
     /* Navigation */
@@ -78,6 +76,42 @@
       border-radius:5px;
       box-shadow: 0px 0px 4px #16244721;
     }
+
+    .loader {
+    border: 16px solid #fff;
+    border-radius: 50%;
+    border-top: 16px solid #e43f5a;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position:absolute;
+    top:40%;
+    z-index:3
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .overlay-loader {
+      background: #162447ed;
+      min-height: 669px;
+      width:100%;
+      padding-left:40%;
+      position:absolute;
+      z-index:2;
+    }
     </style>
   </head>
-  <body>
+  <?php if ($page != 'index' AND $page != 'register') { ?>
+    <body>
+  <?php } else { ?>
+    <body class="blue-dark-bg text-light">
+  <?php } ?>

@@ -1,3 +1,4 @@
+<?php if ($page != 'index' AND $page != 'register') { ?>
 <nav class="text-light navigation-bottom" style="width:100%">
 <div class="row text-center">
   <div class="col-4">
@@ -32,3 +33,4 @@
 </div>
 </nav>
 <br>
+<?php } ?>
