@@ -1,18 +1,18 @@
 <?php
-  include "app/config/connection.php";
-  include "app/config/setting.php";
-  include "app/config/endpoint.php";
+  include "../../app/config/connection.php";
+  include "../../app/config/setting.php";
+  include "../../app/config/endpoint.php";
  ?>
 <!DOCTYPE html>
   <head>
     <title>Track</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <script src="assets/js/mapbox-gl.js"></script>
-    <link rel="stylesheet" href="assets/css/mapbox-gl.css"  />
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/animate.min.css">
+    <script src="../../assets/js/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="../../assets/css/mapbox-gl.css"  />
+    <link rel="stylesheet" href="../../assets/css/custom.css">
     <style media="screen" type="text/css">
     /* Navigation */
     .navigation-bottom {
@@ -123,8 +123,18 @@
     }
     </style>
   </head>
-  <?php if ($page != 'index' AND $page != 'register') { ?>
-    <body>
-  <?php } else { ?>
-    <body class="blue-dark-bg text-light">
-  <?php } ?>
+<body>
+  <div id='map-single' style="width:100%;height:250px"></div>
+  <a href="https://www.google.com/maps/place/-7.257113+112.752165" class="btn blue-light-bg text-light" style="width:100%;font-size:12px">Buka Google Map</a>
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <?php
+    $id    = 1;
+    echo '<script type="text/javascript"> var track = "false"; var id = '.$id.'; </script>';
+    echo '<script type="text/javascript" src="../../assets/js/map-all-single.js"></script>';
+  ?>
+</body>
+<script src="../../assets/js/custom.js"></script>
+<script src="../../assets/js/jquery-3.4.1.slim.min.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+</html>

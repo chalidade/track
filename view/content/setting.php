@@ -16,7 +16,7 @@
             </td>
           </form>
             <td>
-              <button class="btn pink-bg text-light" data-toggle="modal" data-target="#addNew" style="font-size:12px">Add New</button>
+              <button class="btn pink-bg text-light" data-toggle="modal" data-target="#addNew" style="font-size:12px">+ New</button>
             </td>
           </tr>
         </table>

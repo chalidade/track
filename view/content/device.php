@@ -16,7 +16,7 @@
           </td>
         </form>
           <td>
-            <button class="btn pink-bg text-light" data-toggle="modal" data-target="#addNew" style="font-size:12px">Add New</button>
+            <button class="btn pink-bg text-light" data-toggle="modal" data-target="#addNew" style="font-size:12px">+ New</button>
           </td>
         </tr>
       </table>
@@ -108,14 +108,7 @@
                       </tr>
                       <tr>
                         <td colspan="3">
-                          <div id='map-single' style="width:100%;height:250px"></div>
-                          <a href="https://www.google.com/maps/place/-7.257113+112.752165" class="btn blue-light-bg text-light" style="width:100%;font-size:12px">Buka Google Map</a>
-                          <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
-                          <?php
-                            $id    = 1;
-                            echo '<script type="text/javascript"> var track = "false"; var id = '.$id.'; </script>';
-                            echo '<script type="text/javascript" src="assets/js/map-all-single.js"></script>';
-                          ?>
+                          <iframe src="view/option/detail-map.php" style="border:none;height:300px;width:100%"></iframe>
                         </td>
                       </tr>
                     </table>
