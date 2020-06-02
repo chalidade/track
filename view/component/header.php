@@ -108,6 +108,19 @@
       position:absolute;
       z-index:2;
     }
+    .container-login {
+      position: absolute;
+      width:100%;
+      top:20%;
+      padding: 60px;
+      text-align:center;
+    }
+    .container-register {
+      position: absolute;
+      width:100%;
+      padding: 60px;
+      text-align:center;
+    }
     </style>
   </head>
   <?php if ($page != 'index' AND $page != 'register') { ?>

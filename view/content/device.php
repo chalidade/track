@@ -1,3 +1,4 @@
+<div id="content-device" style="display:none">
 <div class="container">
   <h1 class="sub-title">All Device</h1>
   <hr>
@@ -167,4 +168,5 @@
         </div>
       </div>
     </div>
+  </div>
   </div>

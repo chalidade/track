@@ -1,5 +1,8 @@
+<div id="content-user" style="display:block">
 <div class="row p-side-20">
-  <img src="assets/img/exit.png" style="width:35px;position:absolute;right:20px;top:0px" alt="">
+  <a href="?">
+    <img class="animate__animated animate__fadeInDown" src="assets/img/exit.png" style="width:35px;position:absolute;right:20px;top:0px" alt="">
+  </a>
   <form action="?page=user" method="post" style="width:100%">
   <div class="col-12 text-center">
     <img src="assets/img/user_profile.png" style="width:80px;margin-top:20px" alt="">
@@ -14,7 +17,7 @@
   <div class="col-6">
     <div class="card text-light blue-light-bg mb-3" style="max-width: 18rem;">
       <div class="card-body">
-        <table style="width:100%;text-align:center">
+        <table class="text-light" style="font-size:12px;width:100%;text-align:center">
           <tr>
             <td style="text-align:left">
               <img src="assets/img/motorcycle.png" style="width:50px" alt="">
@@ -32,7 +35,7 @@
   <div class="col-6">
     <div class="card text-light blue-light-bg mb-3" style="max-width: 18rem;">
       <div class="card-body">
-        <table style="width:100%;text-align:center">
+        <table class="text-light" style="font-size:12px;width:100%;text-align:center">
           <tr>
             <td style="text-align:left">
               <img src="assets/img/automobile.png" style="width:50px" alt="">
@@ -53,7 +56,7 @@
   <div class="col-6">
     <div class="card text-light blue-light-bg mb-3" style="max-width: 18rem;">
       <div class="card-body">
-        <table style="width:100%;text-align:center">
+        <table class="text-light" style="font-size:12px;width:100%;text-align:center">
           <tr>
             <td style="text-align:left">
               <img src="assets/img/geolocalization.png" style="width:50px" alt="">
@@ -71,7 +74,7 @@
   <div class="col-6">
     <div class="card text-light blue-light-bg mb-3" style="max-width: 18rem;">
       <div class="card-body">
-        <table style="width:100%;text-align:center">
+        <table class="text-light" style="font-size:12px;width:100%;text-align:center">
           <tr>
             <td style="text-align:left">
               <img src="assets/img/mark.png" style="width:50px" alt="">
@@ -92,3 +95,4 @@
 </div>
 <hr style="width:30%">
 <p class="text-center" style="font-size:10px">Copyright © 2020 <font class="bg-dark-text" style="font-weight:800"> TRACK </font>. All rights reserved. </p>
+</div>

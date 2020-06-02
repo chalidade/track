@@ -1,3 +1,4 @@
+<div id="content-map" style="display:none">
 <div id='map' class='map-full'></div>
 <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <?php
@@ -14,3 +15,4 @@ if (isset($_REQUEST["track"]) AND isset($_REQUEST["id"])) {
   echo '<script type="text/javascript" src="assets/js/map-all.js"></script>';
 }
 ?>
+</div>
