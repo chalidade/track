@@ -10,9 +10,9 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <script src="assets/js/mapbox-gl.js"></script>
     <link rel="stylesheet" href="assets/css/mapbox-gl.css"  />
     <link rel="stylesheet" href="assets/css/custom.css">
-    <script src="assets/js/mapbox-gl.js"></script>
     <style media="screen" type="text/css">
     /* Navigation */
     .navigation-bottom {

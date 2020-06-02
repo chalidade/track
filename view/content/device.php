@@ -108,13 +108,13 @@
                       </tr>
                       <tr>
                         <td colspan="3">
-                          <div id='map' style="width:100%;height:250px"></div>
+                          <div id='map-single' style="width:100%;height:250px"></div>
                           <a href="https://www.google.com/maps/place/-7.257113+112.752165" class="btn blue-light-bg text-light" style="width:100%;font-size:12px">Buka Google Map</a>
                           <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
                           <?php
                             $id    = 1;
                             echo '<script type="text/javascript"> var track = "false"; var id = '.$id.'; </script>';
-                            echo '<script type="text/javascript" src="assets/js/map-all.js"></script>';
+                            echo '<script type="text/javascript" src="assets/js/map-all-single.js"></script>';
                           ?>
                         </td>
                       </tr>

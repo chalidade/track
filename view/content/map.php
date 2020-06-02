@@ -1,5 +1,5 @@
 <div id="content-map" style="display:none">
-<div id='map' class='map-full'></div>
+<div id='map' class='map-full' style="width:100%;min-height:550px"></div>
 <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <?php
 if (isset($_REQUEST["track"]) AND isset($_REQUEST["id"])) {
