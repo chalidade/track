@@ -66,7 +66,7 @@
             <form class="" action="index.html" method="post" style="width:100%">
               <div class="row">
                   <div class="col-12">
-                    <table width="100%" cellpadding="5" cellspacing="10">
+                    <table width="100%" cellpadding="5" cellspacing="10" style="font-size:10px">
                       <tr>
                         <th>Mobil / Motor</th>
                         <td>:</td>
@@ -108,7 +108,14 @@
                       </tr>
                       <tr>
                         <td colspan="3">
-                          <iframe src="view/option/detail-map.php" style="border:none;height:300px;width:100%"></iframe>
+                          <div id='map-single' style="width:100%;height:250px"></div>
+                          <a href="https://www.google.com/maps/place/-7.257113+112.752165" class="btn blue-light-bg text-light" style="width:100%;font-size:12px">Buka Google Map</a>
+                          <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+                          <?php
+                            $id    = 1;
+                            echo '<script type="text/javascript"> var track = "false"; var id = '.$id.'; </script>';
+                            echo '<script type="text/javascript" src="assets/js/map-all-single.js"></script>';
+                          ?>
                         </td>
                       </tr>
                     </table>
